@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  #platos-comanda {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #platos-comanda > div {
+    flex: 0 0 auto; /* Esto permite que los elementos se ajusten automáticamente */
+    margin-right: 10px; /* Margen entre los platos */
+  }
+  
+  #platos-comanda > div:last-child {
+    margin-right: 0; /* Eliminar el margen derecho del último elemento */
+  }
+  
+  #platos-comanda > div p {
+    margin: 0;
+  }
+  
+  button.add-to-cart {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  button.add-to-cart:hover {
+    background-color: #0056b3;
+  }
+  
+  button.add-to-cart:focus {
+    outline: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: 150px;
+  }
+
+  input{
+    width: 50px;
+  }
+  
+  #platos-carta {
+    display: flex; /* Utilizamos flexbox para organizar los platos */
+  }
+  
+  plato-component {
+    text-align: center;
+    padding: 10px;
+    width: calc(17% - 0px); /* Ajuste para mostrar tres columnas y espacio entre ellos */
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: inline-block; /* Mostrar los platos en línea */
+    margin: 10px; /* Margen entre los platos */
+  }
+  
+  @media (max-width: 992px) {
+    plato-component {
+      width: calc(50% - 20px); /* Ajuste para mostrar dos columnas en pantallas más pequeñas */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    plato-component {
+      width: calc(100% - 20px); /* Ajuste para mostrar un plato por fila en pantallas pequeñas */
+    }
+  }
+  
+
+  plato-component:hover {
+    box-shadow: 5px 5px 5px rgba(121, 121, 121, 0.582);
+    transition: 0.5s;
+  }
+  
+  plato-component:last-child {
+    margin-right: 0; /* Eliminar el margen derecho del último plato */
+  }
+  
+  
